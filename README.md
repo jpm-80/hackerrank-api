@@ -4,8 +4,8 @@ Este proyecto es una aplicación Spring Boot con Java 17, diseñada para consumi
 El objetivo principal es recibir un país y un número de teléfono como parámetros HTTP (RequestParam) y devolver el número en formato internacional, es decir, concatenando el símbolo "+" y el código de país extraído de la API a partir del país recibido.
 
 Ejemplo de uso:
-Solicitud: GET /phone?country=Brazil&phone=5551999999999
-Respuesta: +55 5551999999999
+Solicitud: GET /hackerrank/v1?country=Angola&phone=9543104545
+Respuesta: +244 9543104545
 
 No se utilizan dependencias adicionales, más allá de lo que trae Java 17 y Spring Boot, ni utilidades de Spring para el consumo de servicios REST: el consumo de la API remota se realiza exclusivamente con HttpClient y HttpRequest.
 
@@ -51,7 +51,7 @@ phone (String): Número de teléfono
 
 Ejemplo de solicitud:
 text
-GET http://localhost:8080/hackerrank/v1?country=Brazil&phone=1199999999
+GET http://localhost:8080/hackerrank/v1?name=Brazil&phone=1199999999
 Ejemplo de Respuesta:
 
 text
